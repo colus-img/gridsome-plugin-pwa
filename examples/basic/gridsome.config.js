@@ -17,7 +17,9 @@ module.exports = {
         manifestPath: "manifest.json",
         disableServiceWorker: true,
         serviceWorkerPath: "service-worker.js",
-        cachedFileTypes: "js,json,css,html,png,jpg,jpeg,svg",
+        cacheType: "runtimeCache", //preCache or runtimeCache
+        cachedFileTypes: "", //"js,json,css,html,png,jpg,jpeg,svg", //use preCache
+        externalSrcFqdnRegExp: "", //use runtimeCache RegExp
         shortName: "Gridsome",
         themeColor: "#666600",
         backgroundColor: "#ffffff",
